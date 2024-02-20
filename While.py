@@ -17,4 +17,44 @@ print("Dastur to'xtadi")
 print(f"Kutubxonaga yangi kitoblar qo'shamiz, kitoblar soni: {s}.\n")
 
 
+# 2:
+
+print("Muzeyga xush kelibsiz!!!")
+savol = "Yoshingizni kiriting: \n"
+while True:
+  j = input(savol)
+  if j == 'exit' or j== 'quit':
+    break
+  yosh = int(j)
+  if yosh <= 7:
+    narh = 2000
+  elif 7 < yosh <= 18:
+    narh = 3000
+  elif 18 < yosh <=65:
+    narh = 10000
+  else:
+    narh = 0
+
+  if narh == 0:
+      print("Sizga chipta bepul")
+  else: 
+      print(f"Chipta {narh} so'm")  
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
