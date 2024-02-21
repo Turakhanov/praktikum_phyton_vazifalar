@@ -16,3 +16,108 @@ while True:
 print("Do'stlaringiz ro'yhati: \n")
 for ism in ismlar:
     print(ism.title())
+
+
+
+#2:
+
+print("Do'stlaringiz haqida ma'lumot to'playmiz!")
+friends = {}
+ishora = True
+while ishora:
+   ism = input("Do'stingizni ismini kiriting: \n")
+   yosh = input(f"{ism}ning yoshi nechada: \n")
+   friends[ism] = int(yosh)
+   add = input("Yana ma'lumot qo'shasizmi? (yes/no)")
+   if add == 'no':
+      break
+
+print("Saqlangan ma'lumotlar: \n")
+for ism, yosh in friends.items():
+   print(f"{ism}.title()}ning yoshi {yosh} da")
+
+
+
+
+#3:
+
+cars = ['bmw', 'audi', 'nexia', 'damaz', 'audi']
+car = 'audi'
+while car in cars:
+   cars.remove(car)
+
+print(cars)
+
+
+
+#4:
+
+print("O'quvchilarni baholaymiz: \n")
+talabalar = ['akmal', 'akbar', 'ali', 'vali']
+baholangan_talabalar = {}
+while talabalar:
+   talaba = talabalar.pop()   
+   baho = input(f"{talaba.title()}ning bahosini kiriting: \n")
+   print(f"{talaba.title()} baholandi! \n")
+   baholangan_talabalar[talaba] = int(baho)
+
+print(f"{baholangan_talabalar[talaba].title()}ning bahosi {baho} \n")
+
+
+
+#5:
+
+
+print("Magazinga xush kelibsiz!")
+zakaz = []
+ishora = True
+while ishora:
+   mahsulot = input("Nima mahsulot qidiryapsiz: \n")
+   print("Qabul qilindi! \n")
+   zakaz.append(mahsulot)
+   takror = input("Yana maxsulot qidirasizmi?  (yes/no) \n")
+   if takror == 'no':
+      break
+
+
+print("Zakazlar qabul qilindi! \n")
+
+
+#6:
+
+print("E-bozorga xush kelibsiz! \n")
+mahsulotlar = {}
+while True:
+   mahsulot = input("Mahsulot nomini kiriting: \n")
+   narh = input(f"{mahsulot.title()}ning narhini kiriting: \n")
+   mahsulotlar[mahsulot] = int(narh)
+   takror = input("yana mahsulot qo'shasizmi?  (yes/no) \n")
+   if takror == 'no':
+      break
+
+print("E-bozordagi mahsulotlaringiz: \n")
+for mahsulot, narh in mahsulotlar.items():
+   print(f"{mahsulot.title()}ning narhi - {narh} so'm \n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
