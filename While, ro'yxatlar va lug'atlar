@@ -1,0 +1,18 @@
+print("Do'stlaringizni ro'yhatini tuzamiz! \n")
+s = 1
+ismlar = []
+while True:
+   savol = f"{s} - do'stingizni ismini kiriting: \n"
+   ism = input(savol)
+   ismlar.append(ism)
+   s += 1
+   savol2 = input(" (yana ism qo'shasizmi? ha/yo'q) \n")
+   if savol2 != 'ha':
+      break
+
+
+
+
+print("Do'stlaringiz ro'yhati: \n")
+for ism in ismlar:
+    print(ism.title())
